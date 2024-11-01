@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>横並び</title>
+    <style>
+        .contents{  
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            background-color: rgb(188, 252, 252);
+            height: 1000px;
+            margin: 0 auto;
+        }
+        .text{
+            width: 1000px;
+            background-color: rgb(12, 83, 60);
+            color: aliceblue;
+            margin: 0 auto;
+        }
+        @media(max-width:767px){
+    .contents{
+                   grid-template-columns: 1fr 1fr;
+                   background-color: rgb(35, 0, 88);
+        }
+    }
+    </style>
+</head>
+<body>
+<div class="contents"> 
+    <div class="box"> <img src="img/a.svg" alt="テキスト1"></div>
+    <div class="box"> <img src="img/b.svg" alt="テキスト2"></div>
+    <div class="box"> <img src="img/c.svg" alt="テキスト3"></div>
+    <div class="box"> <img src="img/d.svg" alt="テキスト4"></div>
+</div>
+<div class="text">D132<br>
+    ダミーテキストダミーテキスト
+    ダミーテキストダミーテキスト
+    ダミーテキストダミーテキスト
+    ダミーテキストダミーテキスト
+</div>
+</body>
+</html>
